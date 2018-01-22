@@ -10,8 +10,8 @@ import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
+import org.slf4j.Logger;
+import static org.slf4j.LoggerFactory.getLogger;
 
 /**
  *
@@ -19,7 +19,7 @@ import org.apache.commons.logging.LogFactory;
  */
 public class State {
 
-    private static final Log LOGGER = LogFactory.getLog(State.class);
+    private static final Logger LOGGER = getLogger(State.class);
 
     public static final char EMPTY = '\ufffe';
 

@@ -12,8 +12,8 @@ import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Set;
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
+import org.slf4j.Logger;
+import static org.slf4j.LoggerFactory.getLogger;
 
 /**
  *
@@ -21,7 +21,7 @@ import org.apache.commons.logging.LogFactory;
  */
 public class Searcher {
 
-    private static final Log LOGGER = LogFactory.getLog(Searcher.class);
+    private static final Logger LOGGER = getLogger(Searcher.class);
 
     private final State initialState;
 
